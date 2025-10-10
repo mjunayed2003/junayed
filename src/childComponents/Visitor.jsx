@@ -16,6 +16,8 @@ const Visitor = () => {
         },
         body: JSON.stringify({ ip: res?.ip }),
       });
+
+
     };
     getData();
   }, []);

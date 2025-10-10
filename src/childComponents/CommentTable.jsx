@@ -14,12 +14,18 @@ import client_api from "@/utility/api_fetch_fun";
 
 function CommentTable() {
   const [data, setData] = useState([]);
-  useEffect(async () => {
-    await client_api.get("/api/dashboard/comment/read-all").then((res) => {
-      if (res.status === true) {
-        setData(res?.data);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await client_api.get("/api/dashboard/comment/read-all");
+        if (res.status === true) {
+          setData(res.data);
+        }
+      } catch (err) {
+        console.error(err);
       }
-    });
+    };
+    fetchData();
   }, []);
 
   const DeleteComment = (id) => {
