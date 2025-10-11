@@ -116,7 +116,7 @@ const HomeComponent = ({ data }) => {
                   <div className=" grid gap-[34px] rounded-lg border-2 border-dotted border-text p-[20px]">
                     <h3 className="text-center text-[24px]">About Us</h3>
                     <div className="flex  justify-around p-[10px]">
-                      <img src="assets/images/junayed2.png" alt="" width={200}/>
+                      <img src="assets/images/junayed.png" alt="" width={200}/>
                     </div>
                   </div>
                 </Link>

@@ -31,7 +31,7 @@ const DashboardMasterLayout = ({ children }) => {
           <div className="border-r border-[#4b5563] bg-[#36404A] p-4 shadow-xl">
             <div className="p-4">
               <img
-                src="/assets/images/junayed2.png"
+                src="/assets/images/junayed.png"
                 alt="Profile"
                 className="w-[180px]"
               />

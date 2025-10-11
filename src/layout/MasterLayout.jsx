@@ -27,7 +27,7 @@ const MasterLayout = (props) => {
           <div className=" flex justify-between rounded-[10px] bg-card px-[15px]  py-[30px] md:px-[30px]">
             <div className="logo flex items-center ">
               <Link href={"/"}>
-                <img src={"/assets/images/junayed2.png"} alt="" className="w-50" />
+                <img src={"/assets/images/junayed.png"} alt="" className="w-50" />
               </Link>
             </div>
             <menu className="hidden items-center lg:flex">
@@ -102,7 +102,7 @@ const MasterLayout = (props) => {
               <FaXmark className="text-white  transition-all duration-500  group-hover:rotate-90 group-hover:text-theme" />
             </span>
             <div>
-              <img src="/assets/images/junayed2.png" alt="" width={200}/>
+              <img src="/assets/images/junayed.png" alt="" width={200}/>
             </div>
           </div>
           <div className="my-[30px] border-t border-[#ddd] "></div>
@@ -197,7 +197,7 @@ const MasterLayout = (props) => {
               rights reserved
             </p>
             <div className="mt-[20px] flex justify-center text-center w-50">
-              <img src="/assets/images/junayed2.png" alt="" width={200}/>
+              <img src="/assets/images/junayed.png" alt="" width={200}/>
             </div>
           </div>
         </div>
