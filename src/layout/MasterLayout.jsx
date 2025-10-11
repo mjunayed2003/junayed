@@ -27,7 +27,7 @@ const MasterLayout = (props) => {
           <div className=" flex justify-between rounded-[10px] bg-card px-[15px]  py-[30px] md:px-[30px]">
             <div className="logo flex items-center ">
               <Link href={"/"}>
-                <img src={"/assets/images/junayed2.png"} alt="" className="w-60" />
+                <img src={"/assets/images/junayed2.png"} alt="" className="w-50" />
               </Link>
             </div>
             <menu className="hidden items-center lg:flex">
