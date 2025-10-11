@@ -16,9 +16,6 @@ module.exports = withMT({
       },
     },
     extend: {
-      backgroundImage: {
-        "hero-pattern": "url('/assets/images/show/image-2.png')",
-      },
     },
     colors: {
       transparent: "transparent",
