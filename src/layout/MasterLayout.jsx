@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
@@ -89,9 +89,8 @@ const MasterLayout = (props) => {
       </header>
       {/* sidebar intro */}
       <div
-        className={`sidebar fixed ${
-          sidebar ? "left-0" : "left-[100%]"
-        }  top-0 z-[9999]  h-full w-full bg-btn/60 transition-all duration-500`}
+        className={`sidebar fixed ${sidebar ? "left-0" : "left-[100%]"
+          }  top-0 z-[9999]  h-full w-full bg-btn/60 transition-all duration-500`}
       >
         <div className="ml-auto h-full min-h-[750px] w-[300px] bg-card  px-[30px] pt-[60px] md:min-h-[700px]">
           <div className="relative flex justify-center">
@@ -102,54 +101,54 @@ const MasterLayout = (props) => {
               <FaXmark className="text-white  transition-all duration-500  group-hover:rotate-90 group-hover:text-theme" />
             </span>
             <div>
-              <img src="/assets/images/junayed.png" alt="" width={200}/>
+              <img src="/assets/images/junayed.png" alt="" width={200} />
             </div>
           </div>
           <div className="my-[30px] border-t border-[#ddd] "></div>
           <menu className=" items-center lg:hidden">
-              <ul className="grid  gap-[20px]">
-                <li className={pathname === "/" ? "navActive text-[20px]" : "navNotActive text-[20px]"}>
-                  <Link href={"/"}>Home</Link>
-                </li>
-                <li
-                  className={
-                    pathname === "/about" ? "navActive text-[20px]" : "navNotActive text-[20px]"
-                  }
-                >
-                  <Link href={"/about"}>About Us</Link>
-                </li>
-                <li
-                  className={
-                    pathname === "/portfolio" ? "navActive text-[20px]" : "navNotActive text-[20px]"
-                  }
-                >
-                  <Link href={"/portfolio"}>Portfolio</Link>
-                </li>
-                <li
-                  className={
-                    pathname === "/service" ? "navActive text-[20px]" : "navNotActive text-[20px]"
-                  }
-                >
-                  <Link href={"/service"}>Service</Link>
-                </li>
-                <li
-                  className={
-                    pathname.split("/").slice(0, 2).join("/") === "/blog"
-                      ? "navActive text-[20px]"
-                      : "navNotActive text-[20px]" 
-                  }
-                >
-                  <Link href={"/blog/1"}>Blog</Link>
-                </li>
-                <li
-                  className={
-                    pathname === "/contact" ? "navActive text-[20px]" : "navNotActive text-[20px]"
-                  }
-                >
-                  <Link href={"/contact"}>Contact</Link>
-                </li>
-              </ul>
-            </menu>
+            <ul className="grid  gap-[20px]">
+              <li className={pathname === "/" ? "navActive text-[20px]" : "navNotActive text-[20px]"}>
+                <Link href={"/"}>Home</Link>
+              </li>
+              <li
+                className={
+                  pathname === "/about" ? "navActive text-[20px]" : "navNotActive text-[20px]"
+                }
+              >
+                <Link href={"/about"}>About Us</Link>
+              </li>
+              <li
+                className={
+                  pathname === "/portfolio" ? "navActive text-[20px]" : "navNotActive text-[20px]"
+                }
+              >
+                <Link href={"/portfolio"}>Portfolio</Link>
+              </li>
+              <li
+                className={
+                  pathname === "/service" ? "navActive text-[20px]" : "navNotActive text-[20px]"
+                }
+              >
+                <Link href={"/service"}>Service</Link>
+              </li>
+              <li
+                className={
+                  pathname.split("/").slice(0, 2).join("/") === "/blog"
+                    ? "navActive text-[20px]"
+                    : "navNotActive text-[20px]"
+                }
+              >
+                <Link href={"/blog/1"}>Blog</Link>
+              </li>
+              <li
+                className={
+                  pathname === "/contact" ? "navActive text-[20px]" : "navNotActive text-[20px]"
+                }
+              >
+                <Link href={"/contact"}>Contact</Link>
+              </li>
+            </ul>
+          </menu>
           <div className="my-[30px] border-t border-[#ddd] "></div>
 
           <div className="contact mt-[40px] pb-[20px] md:mt-[0px]">
@@ -196,9 +195,16 @@ const MasterLayout = (props) => {
               Copyright <span className="text-theme">pucu</span> ©2023. All
               rights reserved
             </p>
-            <div className="mt-[20px] flex justify-center text-center w-50">
-              <img src="/assets/images/junayed.png" alt=""/>
+            <div className="mt-[20px] flex justify-center text-center w-full">
+              <img
+                src="/assets/images/junayed.png"
+                alt="Junayed Logo"
+                width={120}
+                height={120}
+                className="object-contain"
+              />
             </div>
+
           </div>
         </div>
       </footer>
