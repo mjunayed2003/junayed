@@ -30,7 +30,7 @@ const MasterLayout = (props) => {
                 <img
                   src="/assets/images/junayed.png"
                   alt="Junayed Logo"
-                  className="w-[120px] h-auto object-contain"
+                  className="w-[200px] h-auto object-contain"
                 />
               </Link>
             </div>
