@@ -197,7 +197,7 @@ const MasterLayout = (props) => {
               rights reserved
             </p>
             <div className="mt-[20px] flex justify-center text-center w-50">
-              <img src="/assets/images/junayed.png" alt="" width={200}/>
+              <img src="/assets/images/junayed.png" alt=""/>
             </div>
           </div>
         </div>
