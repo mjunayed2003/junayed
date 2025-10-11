@@ -25,11 +25,16 @@ const MasterLayout = (props) => {
       <header className="relative z-[999]">
         <div className=" container mx-auto  pt-[30px]">
           <div className=" flex justify-between rounded-[10px] bg-card px-[15px]  py-[30px] md:px-[30px]">
-            <div className="logo flex items-center ">
+            <div className="logo flex items-center">
               <Link href={"/"}>
-                <img src={"/assets/images/junayed.png"} alt="" className="w-50" />
+                <img
+                  src="/assets/images/junayed.png"
+                  alt="Junayed Logo"
+                  className="w-[120px] h-auto object-contain"
+                />
               </Link>
             </div>
+
             <menu className="hidden items-center lg:flex">
               <ul className="flex  gap-[40px]">
                 <li className={pathname === "/" ? "navActive" : "navNotActive"}>
