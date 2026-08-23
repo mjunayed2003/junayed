@@ -151,7 +151,7 @@ const ContactComponent = ({ data }) => {
                 <div className="contact-map">
                   <iframe
                     title="map"
-                    src={contact_page_data?.contact_info_google_map}
+                    src="https://maps.google.com/maps?q=Badda,%20Dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     height={390}
                     width={"100%"}
                   />

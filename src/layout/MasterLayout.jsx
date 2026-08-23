@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { BiMenuAltRight } from "react-icons/bi";
 import {
@@ -8,6 +8,8 @@ import {
   FaLinkedinIn,
   FaTwitter,
   FaXmark,
+  FaSun,
+  FaMoon,
 } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 const MasterLayout = (props) => {
@@ -16,6 +18,34 @@ const MasterLayout = (props) => {
 
   const sidebarControl = () => {
     setSidebar(!sidebar);
+  };
+
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+      localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
+    } else {
+      setTheme("dark");
+      localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+    }
   };
 
   return (
@@ -80,14 +110,19 @@ const MasterLayout = (props) => {
                 </li>
               </ul>
             </menu>
-            <div className="block lg:hidden">
-              <div className="flex items-center gap-4	 px-[10px]">
-                <span
-                  onClick={sidebarControl}
-                  className="rounded-full border border-[#919295] p-[10px] text-[25px] "
-                >
-                  <BiMenuAltRight className="text-text " />
-                </span>
+            <div className="flex items-center gap-[15px]">
+              <button onClick={toggleTheme} className="flex items-center justify-center w-[45px] h-[45px] rounded-full border border-[#919295] text-white hover:text-theme hover:border-theme transition-all duration-300 text-[20px]">
+                {theme === "dark" ? <FaSun /> : <FaMoon />}
+              </button>
+              <div className="block lg:hidden">
+                <div className="flex items-center gap-4 px-[10px]">
+                  <span
+                    onClick={sidebarControl}
+                    className="flex items-center justify-center w-[45px] h-[45px] rounded-full border border-[#919295] text-[25px] hover:text-theme hover:border-theme transition-all duration-300 cursor-pointer"
+                  >
+                    <BiMenuAltRight className="text-text hover:text-theme transition-all duration-300" />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
