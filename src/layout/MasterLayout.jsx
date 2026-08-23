@@ -255,7 +255,7 @@ const MasterLayout = (props) => {
         </div>
       </div>
       {/* Info Card Section */}
-      <section className="relative z-[999]">
+      <section className="relative z-[999] pt-[100px] md:pt-[120px]">
         <div className="main__body">{props.children}</div>
       </section>
       {/* Footer Section */}
