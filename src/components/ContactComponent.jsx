@@ -130,7 +130,7 @@ const ContactComponent = ({ data }) => {
                     required=""
                     rows={10}
                     cols={50}
-                    className="w-full rounded-lg border bg-transparent p-[15px] pl-[10px] text-text focus:outline-none dark:border-btn"
+                    className="w-full rounded-lg border border-border bg-transparent p-[15px] pl-[10px] text-text focus:outline-none focus:border-theme"
                     defaultValue={""}
                   />
                 </div>

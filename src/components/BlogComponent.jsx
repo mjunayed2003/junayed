@@ -120,10 +120,10 @@ const BlogComponent = ({ page, data }) => {
                 className="flex gap-2"
                 previousLabel="<"
                 nextLabel=">"
-                activeLinkClassName="focus:shadow-outline p-[10px] rounded-full text-white border-[#17b978] bg-theme text-btn transition-colors duration-150"
-                pageLinkClassName="focus:shadow-outline flex h-10 w-10  items-center justify-center rounded-full bg-btn text-[#fff] transition-colors duration-150  hover:bg-theme"
-                previousLinkClassName="focus:shadow-outline flex h-10 w-10 items-center justify-center rounded-full bg-btn text-[#fff] transition-colors duration-150  hover:bg-theme"
-                nextLinkClassName="focus:shadow-outline flex h-10 w-10 items-center justify-center rounded-full bg-btn text-[#fff] transition-colors duration-150  hover:bg-theme"
+                activeLinkClassName="focus:shadow-outline p-[10px] rounded-full text-[#fff] border-[#17b978] bg-theme transition-colors duration-150"
+                pageLinkClassName="focus:shadow-outline flex h-10 w-10  items-center justify-center rounded-full bg-btn text-white transition-colors duration-150  hover:bg-theme hover:text-[#fff]"
+                previousLinkClassName="focus:shadow-outline flex h-10 w-10 items-center justify-center rounded-full bg-btn text-white transition-colors duration-150  hover:bg-theme hover:text-[#fff]"
+                nextLinkClassName="focus:shadow-outline flex h-10 w-10 items-center justify-center rounded-full bg-btn text-white transition-colors duration-150  hover:bg-theme hover:text-[#fff]"
                 breakLabel="..."
                 pageCount={totalBlog / perPage}
                 initialPage={parseInt(page) - 1}
