@@ -27,11 +27,9 @@ const MasterLayout = (props) => {
           <div className=" flex justify-between rounded-[10px] bg-card px-[15px]  py-[30px] md:px-[30px]">
             <div className="logo flex items-center">
               <Link href={"/"}>
-                <img
-                  src="/assets/images/junayed.png"
-                  alt="Junayed Logo"
-                  className="w-[200px] h-auto object-contain"
-                />
+                <h1 className="text-[28px] font-extrabold text-white tracking-[4px] uppercase">
+                  JUNAYED
+                </h1>
               </Link>
             </div>
 
@@ -106,7 +104,11 @@ const MasterLayout = (props) => {
               <FaXmark className="text-white  transition-all duration-500  group-hover:rotate-90 group-hover:text-theme" />
             </span>
             <div>
-              <img src="/assets/images/junayed.png" alt="" width={200} />
+              <Link href={"/"}>
+                <h1 className="text-[28px] font-extrabold text-white tracking-[4px] uppercase">
+                  JUNAYED
+                </h1>
+              </Link>
             </div>
           </div>
           <div className="my-[30px] border-t border-[#ddd] "></div>
@@ -201,13 +203,11 @@ const MasterLayout = (props) => {
               rights reserved
             </p>
             <div className="mt-[20px] flex justify-center text-center w-full">
-              <img
-                src="/assets/images/junayed.png"
-                alt="Junayed Logo"
-                width={120}
-                height={120}
-                className="object-contain"
-              />
+              <Link href={"/"}>
+                <h1 className="text-[28px] font-extrabold text-white tracking-[4px] uppercase">
+                  JUNAYED
+                </h1>
+              </Link>
             </div>
 
           </div>
