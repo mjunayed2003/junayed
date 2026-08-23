@@ -15,8 +15,6 @@
 /build
 
 # local env files
-.env
-.env.*
 !.env.example
 
 # vercel
@@ -34,7 +32,6 @@ pnpm-debug.log*
 Thumbs.db
 
 # IDE
-.vscode/
 .idea/
 
 # local config
