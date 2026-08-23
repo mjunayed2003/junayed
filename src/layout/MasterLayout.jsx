@@ -72,7 +72,7 @@ const MasterLayout = (props) => {
       <div className="bg-img"></div>
       {/* Header Section */}
       <header
-        className={`sticky top-0 z-[999] transition-transform duration-300 ease-in-out ${
+        className={`fixed left-0 right-0 top-0 w-full z-[999] transition-transform duration-300 ease-in-out ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
         }`}
       >
