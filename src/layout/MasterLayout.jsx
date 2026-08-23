@@ -255,11 +255,11 @@ const MasterLayout = (props) => {
         </div>
       </div>
       {/* Info Card Section */}
-      <section className="relative z-[999] pt-[100px] md:pt-[120px]">
+      <section className="relative z-[10] pt-[100px] md:pt-[120px]">
         <div className="main__body">{props.children}</div>
       </section>
       {/* Footer Section */}
-      <footer className="relative z-[999]">
+      <footer className="relative z-[10]">
         <div className="container mx-auto  flex justify-center pb-[40px]">
           <div>
             <p className="text-center text-text">
