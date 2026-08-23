@@ -29,7 +29,9 @@ const BlogComponent = ({ page, data }) => {
 
   const handelPageClick = async (event) => {
     let pageNo = await event.selected;
-    router.replace(`/blog/${pageNo + 1}`);
+    if (pageNo + 1 !== parseInt(page)) {
+      router.replace(`/blog/${pageNo + 1}`);
+    }
   };
 
   return (

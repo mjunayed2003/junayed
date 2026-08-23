@@ -23,13 +23,16 @@ const MasterLayout = (props) => {
       <div className="bg-img"></div>
       {/* Header Section */}
       <header className="relative z-[999]">
-        <div className=" container mx-auto  pt-[30px]">
-          <div className=" flex justify-between rounded-[10px] bg-card px-[15px]  py-[30px] md:px-[30px]">
+        <div className=" container mx-auto  pt-[15px]">
+          <div className=" flex justify-between items-center rounded-[10px] bg-card px-[15px]  py-[15px] md:px-[30px]">
             <div className="logo flex items-center">
               <Link href={"/"}>
-                <h1 className="text-[28px] font-extrabold text-white tracking-[4px] uppercase">
-                  JUNAYED
-                </h1>
+                <div className="flex items-end">
+                  <h1 className="text-[24px] md:text-[30px] font-black text-transparent bg-clip-text bg-gradient-to-r from-theme to-white tracking-[4px] uppercase drop-shadow-lg">
+                    JUNAYED
+                  </h1>
+                  <div className="w-[8px] h-[8px] bg-theme rounded-full mb-[8px] ml-[4px] shadow-[0_0_10px_#FF014F]"></div>
+                </div>
               </Link>
             </div>
 
@@ -105,9 +108,12 @@ const MasterLayout = (props) => {
             </span>
             <div>
               <Link href={"/"}>
-                <h1 className="text-[28px] font-extrabold text-white tracking-[4px] uppercase">
-                  JUNAYED
-                </h1>
+                <div className="flex items-end">
+                  <h1 className="text-[24px] md:text-[30px] font-black text-transparent bg-clip-text bg-gradient-to-r from-theme to-white tracking-[4px] uppercase drop-shadow-lg">
+                    JUNAYED
+                  </h1>
+                  <div className="w-[8px] h-[8px] bg-theme rounded-full mb-[8px] ml-[4px] shadow-[0_0_10px_#FF014F]"></div>
+                </div>
               </Link>
             </div>
           </div>
@@ -204,9 +210,12 @@ const MasterLayout = (props) => {
             </p>
             <div className="mt-[20px] flex justify-center text-center w-full">
               <Link href={"/"}>
-                <h1 className="text-[28px] font-extrabold text-white tracking-[4px] uppercase">
-                  JUNAYED
-                </h1>
+                <div className="flex items-end">
+                  <h1 className="text-[24px] md:text-[30px] font-black text-transparent bg-clip-text bg-gradient-to-r from-theme to-white tracking-[4px] uppercase drop-shadow-lg">
+                    JUNAYED
+                  </h1>
+                  <div className="w-[8px] h-[8px] bg-theme rounded-full mb-[8px] ml-[4px] shadow-[0_0_10px_#FF014F]"></div>
+                </div>
               </Link>
             </div>
 
