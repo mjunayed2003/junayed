@@ -20,6 +20,25 @@ const MasterLayout = (props) => {
     setSidebar(!sidebar);
   };
 
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
@@ -52,7 +71,11 @@ const MasterLayout = (props) => {
     <div>
       <div className="bg-img"></div>
       {/* Header Section */}
-      <header className="relative z-[999]">
+      <header
+        className={`sticky top-0 z-[999] transition-transform duration-300 ease-in-out ${
+          showNavbar ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
         <div className=" container mx-auto  pt-[15px]">
           <div className=" flex justify-between items-center rounded-[10px] bg-card px-[15px]  py-[15px] md:px-[30px]">
             <div className="logo flex items-center">
